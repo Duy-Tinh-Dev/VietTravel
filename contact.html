@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên lạc</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- loading -->
+    <div class="loading">
+      <div class="loading__main"></div>
+    </div>
+    <div id="app">
+      <header id="header" class="distance-bottom">
+        <div class="wrapper">
+          <!-- navigation -->
+          <nav class="nav">
+            <a href="#" class="nav__logo">
+              <img src="./assets/img/logo/22.png" alt="" class="img-full" />
+            </a>
+            <!-- list nav -->
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link">Trang chủ</a>
+              </li>
+              <li class="nav__item">
+                <a href="./tour.html" class="nav__link">Hot Tour</a>
+              </li>
+              <li class="nav__item">
+                <a href="./about.html" class="nav__link">Về chúng tôi</a>
+              </li>
+              <li class="nav__item">
+                <a href="./blog.html" class="nav__link">Blog</a>
+              </li>
+              <li class="nav__item">
+                <a href="./contact.html" class="nav__link">Liên lạc</a>
+              </li>
+            </ul>
+            <div class="nav__btn--menu"></div>
+          </nav>
+        </div>
+      </header>
+      <div id="body" class="contact">
+        <section class="contact--support layout-container">
+          <h1 class="contact__heading">Tổ Chức Của Chúng Tôi</h1>
+          <div class="contact__list--person">
+            <div class="contact__item">
+              <div class="contact__item--avt">
+                <img class="img-full" src="./assets/img/bg/taylor.jpg" alt="" />
+              </div>
+              <div class="contact__item--name">Taylor Swift</div>
+              <div class="contact__item--office">Giám Đốc</div>
+              <div class="contact__item--info">
+                <div class="contact__item--address">
+                  <i class="fa-solid fa-location-dot"></i>
+                  470 , Trần Đại Nghĩa, Ngũ Hành Sơn, Đà Nẵng
+                </div>
+                <div class="contact__item--phone">
+                  <i class="fa-solid fa-phone"></i>0854-740-6416
+                </div>
+                <div class="contact__item--email">
+                  <i class="fa-solid fa-envelope"></i>
+                  domain@expooler.com
+                </div>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__item--avt">
+                <img
+                  class="img-full"
+                  src="./assets/img/bg/vitboiroi.png"
+                  alt=""
+                />
+              </div>
+              <div class="contact__item--name">Trần Duy Tịnh</div>
+              <div class="contact__item--office">Trưởng phòng</div>
+              <div class="contact__item--info">
+                <div class="contact__item--address">
+                  <i class="fa-solid fa-location-dot"></i>
+                  470, Trần Đại Nghĩa, Ngũ Hành Sơn, Đà Nẵng
+                </div>
+                <div class="contact__item--phone">
+                  <i class="fa-solid fa-phone"></i>910-740-6026
+                </div>
+                <div class="contact__item--email">
+                  <i class="fa-solid fa-envelope"></i>
+                  domain@expooler.com
+                </div>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__item--avt">
+                <img
+                  class="img-full"
+                  src="./assets/img/bg/vitboiroiIron.png"
+                  alt=""
+                />
+              </div>
+              <div class="contact__item--name">Phạm Duy Chánh</div>
+              <div class="contact__item--office">Phó cục</div>
+              <div class="contact__item--info">
+                <div class="contact__item--address">
+                  <i class="fa-solid fa-location-dot"></i>
+                  470, Trần Đại Nghĩa, Ngũ Hành Sơn, Đà Nẵng
+                </div>
+                <div class="contact__item--phone">
+                  <i class="fa-solid fa-phone"></i>910-740-6026
+                </div>
+                <div class="contact__item--email">
+                  <i class="fa-solid fa-envelope"></i>
+                  home@travelviet.com
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact__main">
+          <div class="layout-container contact__wrap-main">
+            <form action="" class="contact__form">
+              <h2 class="contact__form--heading">Liên hệ</h2>
+              <p class="contact__form--desc">
+                Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng tôi.
+              </p>
+              <div class="contact__wrap--input">
+                <input type="text" class="input name" placeholder="Tên" />
+                <input type="text" class="input mail" placeholder="Mail" />
+                <textarea
+                  name=""
+                  id=""
+                  cols="10"
+                  rows="5"
+                  class="message input"
+                  placeholder="Ý kiến của bạn"
+                ></textarea>
+              </div>
+              <button class="submit">Gửi đi</button>
+            </form>
+            <img
+              src="./assets/img/contact/bg-banner-contact-form.jpg"
+              alt=""
+              class="contact__main--img"
+            />
+          </div>
+        </section>
+        <section class="contact__map">
+          <div class="contact__map--content">
+            <h2 class="contact__map--header">Địa chỉ của chúng tôi</h2>
+            <div class="contact__map--desc">
+              <div class="contact__map--position">
+                <i class="fa-solid fa-location-dot"></i>
+                470 Đường Trần Đại Nghĩa, Hoà Hải, Ngũ Hành Sơn, Đà Nẵng, Việt
+                Nam
+              </div>
+              <div class="contact__map--phone">
+                <i class="fa-solid fa-phone"></i>
+                0909-075-012
+              </div>
+              <div class="contact__map--mail">
+                <i class="fa-solid fa-envelope"></i>
+                home@travelviet.com
+              </div>
+            </div>
+            <a
+              href="https://www.google.com/maps/place/460+Tr%E1%BA%A7n+%C4%90%E1%BA%A1i+Ngh%C4%A9a/@15.9752427,108.2534708,19z/data=!4m5!3m4!1s0x314211338ea817ed:0x24e10b854e662e6!8m2!3d15.9754642!4d108.2544815"
+              class="contact__map--link"
+              >Mở map</a
+            >
+          </div>
+        </section>
+        <section class="contact__subscribe">
+          <div class="layout-container contact__subscribe--wrap">
+            <div class="contact__subscribe--content">
+              <h2 class="contact__subscribe--heading">
+                <span>Đăng ký</span> để nhận được ưu đãi mới nhất
+              </h2>
+              <div class="contact__subscribe--desc">
+                Tận hưởng những trải nghiệm tốt nhất của chúng tôi bằng cách
+                đăng ký qua email để nhận những thông báo mới nhất
+              </div>
+            </div>
+            <input
+              type="text"
+              class="contact__subscribe--send"
+              placeholder="Nhập địa chỉ email của bạn"
+            />
+          </div>
+        </section>
+      </div>
+      <footer id="footer">
+        <div class="layout-container">
+          <div class="footer__top">
+            <div class="footer__item contact">
+              <h2 class="contact__heading">Call Us</h2>
+              <div class="contact__phone">
+                <i class="fa-solid fa-phone"></i>
+                <span>+84 035 0439 493</span>
+              </div>
+              <h2 class="contact__heading">Email</h2>
+              <div class="contact__phone">
+                <span>Ask@travelviet.com</span>
+              </div>
+            </div>
+            <div class="footer__item about-us">
+              <div class="footer__item--heading">VietTravel</div>
+              <ul class="footer__item--list">
+                <li class="footer__item--link">
+                  <a href="">Về chúng tôi</a>
+                </li>
+                <li class="footer__item--link">
+                  <a href="">Khách hàng tiêu biểu</a>
+                </li>
+                <li class="footer__item--link">
+                  <a href="">Quy trình triển khai</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__item support-us">
+              <div class="footer__item--heading">Kiến thức lĩnh vực</div>
+              <ul class="footer__item--list">
+                <li class="footer__item--link">
+                  <a href="">Xu hướng thiết kế</a>
+                </li>
+                <li class="footer__item--link">
+                  <a href="">Xu hướng du lịch</a>
+                </li>
+                <li class="footer__item--link">
+                  <a href="">Kinh doanh du lịch</a>
+                </li>
+                <li class="footer__item--link">
+                  <a href="">Quản lý doanh thu</a>
+                </li>
+                <li class="footer__item--link">
+                  <a href="">Kinh doanh du lịch</a>
+                </li>
+                <li class="footer__item--link">
+                  <a href="">Tin tức- sự kiện</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__item support-us">
+              <div class="footer__item--heading">
+                Thanh toán an toàn với chúng tôi
+              </div>
+              <p class="footer__item--desc">
+                Khoản thanh toán được mã hóa và truyền an toàn với giao thức
+                SSL.
+              </p>
+              <img
+                class=""
+                src="./assets/img/bank/creditcard-logo.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="footer__button">
+          <div class="footer__button--wrap">
+            <div class="footer__license">
+              © 2022 Wonder Place. All rights reserved.
+            </div>
+            <div class="footer__social">
+              <span>Follow us on</span>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/js/page.js"></script>
+
+    <script src="./assets/js/global.js"></script>
+  </body>
+</html>

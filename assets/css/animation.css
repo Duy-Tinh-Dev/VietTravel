@@ -1,0 +1,56 @@
+.show-smooth {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 2s ease;
+}
+.show-smooth.start {
+  opacity: 1;
+  transform: translateY(0);
+}
+.show-smooth-1 {
+  opacity: 0;
+  transition: all 0.8s linear;
+}
+.show-smooth-1.start {
+  opacity: 1;
+  transform: translateY(0);
+}
+.show-smooth-top {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease-in-out;
+}
+.show-smooth-top.start {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease-in-out;
+}
+.scale {
+  transform: scale(0);
+  transition: all 0.5s linear;
+}
+.scale.start {
+  transform: scale(1);
+}
+.rotate {
+  transform: rotateY(180deg);
+  transition: all 1s ease-in-out;
+}
+.rotate.start {
+  transform: rotateY(0deg);
+}
+.left-to-right {
+  transform: translateX(-150%);
+  transition: all 1s ease-in-out;
+}
+.left-to-right.start {
+  transform: translateX(0%);
+}
+.right-to-left {
+  transform: translateX(150%);
+  transition: all 1s ease-in-out;
+}
+
+.right-to-left.start {
+  transform: translateX(0%);
+}

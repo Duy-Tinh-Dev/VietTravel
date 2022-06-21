@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viet Travel</title>
+    <link rel="icon" href="./assets/img/logo/DT-logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/button.css" />
+  </head>
+  <body>
+    <!-- loading -->
+    <div class="loading">
+      <div class="loading__main"></div>
+    </div>
+    <!-- app -->
+    <div class="main-container" id="app">
+      <!-- header -->
+      <header id="header" class="distance-bottom">
+        <div class="wrapper">
+          <!-- navigation -->
+          <nav class="nav">
+            <a href="#" class="nav__logo">
+              <img src="./assets/img/logo/22.png" alt="" class="img-full" />
+            </a>
+            <!-- list nav -->
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link">Trang chủ</a>
+              </li>
+              <li class="nav__item">
+                <a href="./tour.html" class="nav__link">Hot Tour</a>
+              </li>
+              <li class="nav__item">
+                <a href="./about.html" class="nav__link">Về chúng tôi</a>
+              </li>
+              <li class="nav__item">
+                <a href="./blog.html" class="nav__link">Blog</a>
+              </li>
+              <li class="nav__item">
+                <a href="./contact.html" class="nav__link">Liên lạc</a>
+              </li>
+            </ul>
+            <div class="nav__btn--menu"></div>
+          </nav>
+
+          <!-- video -->
+          <div class="header__videos"></div>
+          <div class="header__slider">
+            <div class="header__slider--btn active"></div>
+            <div class="header__slider--btn"></div>
+            <div class="header__slider--btn"></div>
+            <div class="header__slider--btn"></div>
+            <div class="header__slider--btn"></div>
+          </div>
+          <div class="header__content">
+            <h1 class="header__content--heading">Du lịch Việt</h1>
+            <div class="header__content--desc">
+              Du lịch đang là xu hướng cực kỳ hấp dẫn đối với đối với những
+              người đam mê khám khá. Giờ đây, bạn có thể có những trải nghiệm
+              mới mẻ
+            </div>
+            <button class="btn btn-13">Xem Thêm</button>
+            <div class="arrow-to-top hide">
+              <a href="#"><i class="fa fa-angle-double-up"></i></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- body   -->
+      <div id="body">
+        <!-- section destination -->
+        <section
+          id="destination"
+          class="show-on-scroll show-smooth distance-bottom"
+        >
+          <div class="destination__contain layout-container">
+            <h2 class="destination__heading">Điểm đến yêu thích</h2>
+            <p class="destination__desc">
+              Khám phá ngay các tour, hoạt động du lịch và địa điểm tham quan
+              trong hành trình du lịch của bạn
+            </p>
+            <div class="destination__list">
+              <div class="destination__item">
+                <h3 class="destination__header">Đà lạt</h3>
+                <img
+                  src="./assets/img/da lat/dalat2.jpg"
+                  alt=""
+                  class="img-full"
+                />
+                <div class="destination__body">
+                  <p class="destination__content">
+                    Đà lạt là một thành phố du lịch, trên cao nguyên của miền
+                    Trung. Sở hữu phong cảnh thiên nhiên thơ mộng hữu tình; được
+                    biết đến là thành phố của mù sương...
+                  </p>
+                  <div class="destination__more">
+                    <span class="destination__more--title">Đọc thêm</span>
+                    <div class="destination__more--icon">
+                      <i class="fa-solid fa-heart"></i>
+                      <i class="fa-solid fa-eye"></i>
+                      <i class="fa-solid fa-paperclip"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="destination__item">
+                <h3 class="destination__header">Hà nội</h3>
+                <img
+                  src="./assets/img/ha noi/hanoi5.jpg"
+                  alt=""
+                  class="img-full"
+                />
+                <div class="destination__body">
+                  <p class="destination__content">
+                    Thủ đô Hà Nội là một địa điểm lý tưởng cho khách du lịch gần
+                    xa. Quý khách sẽ có một chuyến đi đầy thú vị và để lại ấn
+                    tượng tuyệt vời...
+                  </p>
+                  <div class="destination__more">
+                    <span class="destination__more--title">Đọc thêm</span>
+                    <div class="destination__more--icon">
+                      <i class="fa-solid fa-heart"></i>
+                      <i class="fa-solid fa-eye"></i>
+                      <i class="fa-solid fa-paperclip"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="destination__item">
+                <h3 class="destination__header">Huế</h3>
+                <img src="./assets/img/hue/hue3.jpg" alt="" class="img-full" />
+                <div class="destination__body">
+                  <p class="destination__content">
+                    Huế có nhiều danh lam thắng cảnh đẹp , và cùng đó là những
+                    giá trị văn hóa vật thể và phi vật thể do con người tạo
+                    nên...
+                  </p>
+                  <div class="destination__more">
+                    <span class="destination__more--title">Đọc thêm</span>
+                    <div class="destination__more--icon">
+                      <i class="fa-solid fa-heart"></i>
+                      <i class="fa-solid fa-eye"></i>
+                      <i class="fa-solid fa-paperclip"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="destination__item">
+                <h3 class="destination__header">Hạ Long</h3>
+                <img
+                  src="./assets/img/ha long/halong2.jpg"
+                  alt=""
+                  class="img-full"
+                />
+                <div class="destination__body">
+                  <p class="destination__content">
+                    Vịnh Hạ Long là 1 trong 10 Vịnh biển đẹp nhất thế giới. Kết
+                    hợp hài hoài giữa không gian rộng lớn của bầu trời, sông
+                    nước ...
+                  </p>
+                  <div class="destination__more">
+                    <span class="destination__more--title">Đọc thêm</span>
+                    <div class="destination__more--icon">
+                      <i class="fa-solid fa-heart"></i>
+                      <i class="fa-solid fa-eye"></i>
+                      <i class="fa-solid fa-paperclip"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="destination__item">
+                <h3 class="destination__header">Nha Trang</h3>
+                <img
+                  src="./assets/img/nha trang/nhatrang1.jpg"
+                  alt=""
+                  class="img-full"
+                />
+                <div class="destination__body">
+                  <p class="destination__content">
+                    Nha Trang thu hút du khách không chỉ có biển đảo bao la, mà
+                    còn có nhiều khu danh thắng nổi tiếng, những lễ hội độc đáo
+                    thu hút lữ khách đến với Nha Trang...
+                  </p>
+                  <div class="destination__more">
+                    <span class="destination__more--title">Đọc thêm</span>
+                    <div class="destination__more--icon">
+                      <i class="fa-solid fa-heart"></i>
+                      <i class="fa-solid fa-eye"></i>
+                      <i class="fa-solid fa-paperclip"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="destination__item">
+                <h3 class="destination__header">Đà Nẵng</h3>
+                <img
+                  src="./assets/img/da nang/danang1.jpg"
+                  alt=""
+                  class="img-full"
+                />
+                <div class="destination__body">
+                  <p class="destination__content">
+                    Đà Nẵng là điểm đến lý tưởng của nhiều khách du lịch bởi nơi
+                    đây có nhiều thắng cảnh đẹp, chuỗi sự kiện được đầu tư hoành
+                    tráng...
+                  </p>
+                  <div class="destination__more">
+                    <span class="destination__more--title">Đọc thêm</span>
+                    <div class="destination__more--icon">
+                      <i class="fa-solid fa-heart"></i>
+                      <i class="fa-solid fa-eye"></i>
+                      <i class="fa-solid fa-paperclip"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="destination__item">
+                <h3 class="destination__header">Vũng Tàu</h3>
+                <img
+                  src="./assets/img/vung tau/vungtau2.jpg"
+                  alt=""
+                  class="img-full"
+                />
+                <div class="destination__body">
+                  <p class="destination__content">
+                    Vũng Tàu vốn nổi tiếng là thành phố biển luôn mang đến cho
+                    du khách cảm giác yên bình, dễ chịu với những con đường
+                    thoáng đãng, rộng rãi...
+                  </p>
+                  <div class="destination__more">
+                    <span class="destination__more--title">Đọc thêm</span>
+                    <div class="destination__more--icon">
+                      <i class="fa-solid fa-heart"></i>
+                      <i class="fa-solid fa-eye"></i>
+                      <i class="fa-solid fa-paperclip"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="destination__item">
+                <h3 class="destination__header">Hội An</h3>
+                <img
+                  src="./assets/img/hoi an/hoian3.jpg"
+                  alt=""
+                  class="img-full"
+                />
+                <div class="destination__body">
+                  <p class="destination__content">
+                    Hội An mang vẻ đẹp ngưng đọng thời gian, nét đẹp cổ kính,
+                    thơ mộng. Có sức hút mãnh liệt,khiến khách du lịch khó lòng
+                    rời đi...
+                  </p>
+                  <div class="destination__more">
+                    <span class="destination__more--title">Đọc thêm</span>
+                    <div class="destination__more--icon">
+                      <i class="fa-solid fa-heart"></i>
+                      <i class="fa-solid fa-eye"></i>
+                      <i class="fa-solid fa-paperclip"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn btn--border btn--primary btn--animated">
+              Xem tất cả điểm đến
+            </div>
+          </div>
+        </section>
+        <!-- section service  -->
+        <section id="service" class="show-on-scroll scale">
+          <div class="service__container layout-container distance-bottom">
+            <h1 class="service__heading">Vì Sao chọn Vietralvel</h1>
+            <div class="service__list">
+              <div class="service__item">
+                <img src="./assets/img/svg/mang-ban-tour.svg" class="" alt="" />
+                <h4 class="service__item--heading">Mạng Bán Tour</h4>
+                <p class="service__item--desc">
+                  Hàng đầu Việt Nam <br />
+                  Ứng dụng công nghệ tiên tiến
+                </p>
+              </div>
+              <div class="service__item">
+                <img src="./assets/img/svg/gia-ca.svg" class="" alt="" />
+                <h4 class="service__item--heading">Giá cả</h4>
+                <p class="service__item--desc">
+                  Giá cả hợp lý, tốt nhất cho khách hàng
+                </p>
+              </div>
+              <div class="service__item">
+                <img src="./assets/img/svg/sp-va-dv.svg" class="" alt="" />
+                <h4 class="service__item--heading">Sản phẩm và dịch vụ</h4>
+                <p class="service__item--desc">Đa dạng - Đầy đủ - Chất lượng</p>
+              </div>
+              <div class="service__item">
+                <img src="./assets/img/svg/dat-tuor-t.svg" class="" alt="" />
+                <h4 class="service__item--heading">Đặt tour</h4>
+                <p class="service__item--desc">Dễ dàng và nhanh chóng</p>
+              </div>
+              <div class="service__item">
+                <img src="./assets/img/svg/thanh-toan.svg" class="" alt="" />
+                <h4 class="service__item--heading">Thanh toán</h4>
+                <p class="service__item--desc">An toàn và linh hoạt</p>
+              </div>
+              <div class="service__item">
+                <img src="./assets/img/svg/ho-tro-kh.svg" class="" alt="" />
+                <h4 class="service__item--heading">Hỗ trợ</h4>
+                <p class="service__item--desc">Hotline và trực tuyến 24/7</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- section selling -->
+        <!-- show-on-scroll show-smooth-top -->
+        <section id="selling" class="show-on-scroll show-smooth-top">
+          <div class="selling__container">
+            <h1 class="selling__heading">Bán chạy nhất</h1>
+            <div class="layout-container selling__wrap">
+              <div class="selling__list">
+                <div class="selling__item" id="">
+                  <img src="./assets/img/da lat/dalat3.jpg" alt="" />
+                  <h2 class="selling__item--header">Đà lạt</h2>
+                  <div class="selling__item--content">
+                    <p class="selling__item--day">10 ngày</p>
+
+                    <h3 class="selling__item--desc">
+                      Cùng nhau trải nghiệm du lịch 10 ngày liên tiếp siêu hấp
+                      dẫn tại Đà Lạt
+                    </h3>
+                    <div class="selling__item--buy">
+                      <span class="selling__item-price">6,990,000 đ</span>
+                      <button class="selling__item--btn">Chi tiết</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="selling__item">
+                  <img src="./assets/img/ha long/halong3.jpg" alt="" />
+
+                  <h2 class="selling__item--header">Hạ Long</h2>
+                  <div class="selling__item--content">
+                    <p class="selling__item--day">3 ngày</p>
+                    <h3 class="selling__item--desc">
+                      Chiêm ngưỡng vẻ đẹp của một trong những kỳ quan của thế
+                      giới tại Hạ Long
+                    </h3>
+                    <div class="selling__item--buy">
+                      <span class="selling__item-price">2,990,000 đ</span>
+                      <button class="selling__item--btn">Chi tiết</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="selling__item">
+                  <img src="./assets/img/nha trang/nhatrang3.jpg" alt="" />
+
+                  <h2 class="selling__item--header">Nha Trang</h2>
+                  <div class="selling__item--content">
+                    <p class="selling__item--day">7 ngày</p>
+                    <h3 class="selling__item--desc">
+                      Tự do thư giãn, tắm biển, ngắm san hô, trải nghiệm bùn
+                      khoáng và ngâm suối ở Nha Trang
+                    </h3>
+                    <div class="selling__item--buy">
+                      <span class="selling__item-price">4,990,000 đ</span>
+                      <button class="selling__item--btn">Chi tiết</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="selling__item">
+                  <img src="./assets/img/hoi an/hoian2.jpg" alt="" />
+                  <h2 class="selling__item--header">Hội An</h2>
+                  <div class="selling__item--content">
+                    <p class="selling__item--day">5 ngày</p>
+                    <h3 class="selling__item--desc">
+                      Khám phá những kiến trúc cổ vẫn còn lưu giữ một nền văn
+                      hóa đa dạng, phong phú tại phố cổ Hội An
+                    </h3>
+                    <div class="selling__item--buy">
+                      <span class="selling__item-price">5,550,000 đ</span>
+                      <button class="selling__item--btn">Chi tiết</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="selling__item">
+                  <img src="./assets/img/da nang/danang6.jpg" alt="" />
+
+                  <h2 class="selling__item--header">Đà Nẵng</h2>
+                  <div class="selling__item--content">
+                    <p class="selling__item--day">10 ngày</p>
+
+                    <h3 class="selling__item--desc">
+                      Tham quan những danh lam thắng cảnh và khám phá bãi biển
+                      dài, nước trong xanh, không khí mát mẻ tại Đà Nẵng
+                    </h3>
+                    <div class="selling__item--buy">
+                      <span class="selling__item-price">5,990,000 đ</span>
+                      <button class="selling__item--btn">Chi tiết</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="selling__item">
+                  <img src="./assets/img/ha noi/hanoi5.jpg" alt="" />
+
+                  <h2 class="selling__item--header">Hà Nội</h2>
+                  <div class="selling__item--content">
+                    <p class="selling__item--day">7 ngày</p>
+                    <h3 class="selling__item--desc">
+                      Hà Nội rất hấp dẫn khách du lịch với những danh lam thắng
+                      cảnh, hiện đại pha chút cổ xưa, nhẹ nhàng
+                    </h3>
+                    <div class="selling__item--buy">
+                      <span class="selling__item-price">3,990,000 đ</span>
+                      <button class="selling__item--btn">Chi tiết</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="selling__item">
+                  <img src="./assets/img/hue/hue5.jpg" alt="" />
+
+                  <h2 class="selling__item--header">Huế</h2>
+                  <div class="selling__item--content">
+                    <p class="selling__item--day">8 ngày</p>
+                    <h3 class="selling__item--desc">
+                      Chiêm ngưỡng các di tích xưa, đền đài, tận hưởng không
+                      gian thơ mộng, trải nghiệm thuyền rồng tại Huế
+                    </h3>
+                    <div class="selling__item--buy">
+                      <span class="selling__item-price">5,450,000 đ</span>
+                      <button class="selling__item--btn">Chi tiết</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="selling__item">
+                  <img src="./assets/img/vung tau/vungtau3.jpg" alt="" />
+
+                  <h2 class="selling__item--header">Vũng Tàu</h2>
+                  <div class="selling__item--content">
+                    <p class="selling__item--day">5 ngày</p>
+                    <h3 class="selling__item--desc">
+                      Ghé thăm những vùng biển đẹp như mơ, ngọn Hải Đăng nổi
+                      tiếng, tượng chúa giơ tay bình yên tại Vũng Tàu
+                    </h3>
+                    <div class="selling__item--buy">
+                      <span class="selling__item-price">3,500,000 đ</span>
+                      <button class="selling__item--btn">Chi tiết</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="selling__control">
+                <button class="selling__btn--pre">
+                  <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="selling__btn--next">
+                  <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section review -->
+        <section id="review" class="">
+          <div class="review__content layout-container">
+            <div class="review__header">
+              <h1 class="review__header--heading show-on-scroll show-smooth-1">
+                Đánh giá <span>du lịch</span>
+              </h1>
+              <p class="review__header--desc show-on-scroll show-smooth-1">
+                Cảm nhận của khách hàng về chuyến du lịch của chúng tôi, sự phục
+                vụ chuyên nghiệp, tận tâm với khách hàng, hài lòng với những gì
+                đã trải nghiệm
+              </p>
+            </div>
+            <div class="review__list">
+              <div class="review__item show-on-scroll rotate">
+                <img
+                  src="https://www.bravo.de/assets/field/image/justin_bieber_schlagt_paparazzi.jpg"
+                  alt=""
+                  class="review__avt"
+                />
+                <h3 class="review__item--name">Justin Bieber</h3>
+                <p class="review__item--job">Khách hàng</p>
+                <div class="review__item--start">
+                  <img src="./assets/img/svg/start.svg" alt="" />
+                </div>
+                <div class="review__item--comment">
+                  Một trải nghiệm tuyệt vời , những cảnh quan đẹp và những điều
+                  đẹp đẽ đã được tận hưởng. Nhân viên phục vụ chu đáo , tận tình
+                </div>
+              </div>
+              <div class="review__item show-on-scroll rotate">
+                <img
+                  src="https://i1.sndcdn.com/avatars-qyoPctRoQxMBWAEZ-l7ISlw-t500x500.jpg"
+                  alt=""
+                  class="review__avt"
+                />
+                <h3 class="review__item--name">Martin Garrix</h3>
+                <p class="review__item--job">Khách hàng</p>
+                <div class="review__item--start">
+                  <img src="./assets/img/svg/start.svg" alt="" />
+                </div>
+                <div class="review__item--comment">
+                  Hội An là một trong những điểm đến du lịch đáng nhớ nhất của
+                  tôi. Tôi rất hài lòng với những gì đã trải nghiệm.
+                </div>
+              </div>
+              <div class="review__item show-on-scroll rotate">
+                <img
+                  src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/321478115380977.604d71f1a8580.png"
+                  alt=""
+                  class="review__avt"
+                />
+                <h3 class="review__item--name">Shiba Inu</h3>
+                <p class="review__item--job">Nhà tiếp thị</p>
+                <div class="review__item--start">
+                  <img src="./assets/img/svg/start.svg" alt="" />
+                </div>
+                <div class="review__item--comment">
+                  Có nhiều nội dung, thanh toán tiện lợi, nhanh gọn, chất lượng
+                  tốt.<br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="visited" class="show-on-scroll">
+          <div class="visited__container layout-container">
+            <div class="visited__list">
+              <div class="visited__item">
+                <h3 class="visited__quantity--travel">0</h3>
+                <div class="visited__name">Chuyến đi</div>
+              </div>
+              <div class="visited__item">
+                <h3 class="visited__quantity--message">0</h3>
+                <div class="visited__name">Du khách /Năm</div>
+              </div>
+              <div class="visited__item">
+                <h3 class="visited__quantity--office">0</h3>
+                <div class="visited__name">Văn phòng</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="support" class="">
+          <div class="support__container layout-container">
+            <h1 class="support__heading show-on-scroll left-to-right">
+              Chuyên viên tư vấn và hỗ trợ
+            </h1>
+            <p class="support__text show-on-scroll left-to-right">
+              Luôn sẵn sàng hỗ trợ bạn
+            </p>
+            <div class="support__list show-on-scroll right-to-left">
+              <div class="support__item">
+                <div class="support__item--avt">
+                  <img
+                    src="./assets/img/bg/vitboiroi.png"
+                    alt=""
+                    class="img-full"
+                  />
+                </div>
+                <div class="support__item--name">Trần Duy Tịnh</div>
+                <div class="support__item--phone">
+                  Hotline <a href="phone">+8442394324</a>
+                </div>
+                <div class="support__item--social">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+              <div class="support__item">
+                <div class="support__item--avt">
+                  <img
+                    src="./assets/img/bg/vitboiroiIron.png"
+                    alt=""
+                    class="img-full"
+                  />
+                </div>
+                <div class="support__item--name">Phạm Duy Chánh</div>
+                <div class="support__item--phone">
+                  HotLine <a href="phone">+844239434535 </a>
+                </div>
+                <div class="support__item--social">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+              <div class="support__item">
+                <div class="support__item--avt">
+                  <img
+                    src="./assets/img/bg/corgi.png"
+                    alt=""
+                    class="img-full"
+                  />
+                </div>
+                <div class="support__item--name">Corgi</div>
+                <div class="support__item--phone">
+                  HotLine <a href="phone">+844589999</a>
+                </div>
+                <div class="support__item--social">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer id="footer">
+        <div class="layout-container">
+          <div class="footer__top">
+            <div class="footer__item contact">
+              <h2 class="contact__heading">Call Us</h2>
+              <div class="contact__phone">
+                <i class="fa-solid fa-phone"></i>
+                <span>+84 035 0439 493</span>
+              </div>
+              <h2 class="contact__heading">Email</h2>
+              <div class="contact__phone">
+                <span>Ask@travelviet.com</span>
+              </div>
+            </div>
+            <div class="footer__item about-us">
+              <div class="footer__item--heading">VietTravel</div>
+              <ul class="footer__item--list">
+                <li class="footer__item--link">
+                  <a href="">Về chúng tôi</a>
+                </li>
+                <li class="footer__item--link">
+                  <a href="">Khách hàng tiêu biểu</a>
+                </li>
+                <li class="footer__item--link">
+                  <a href="">Quy trình triển khai</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__item support-us">
+              <div class="footer__item--heading">Kiến thức lĩnh vực</div>
+              <ul class="footer__item--list">
+                <li class="footer__item--link">
+                  <a href="">Xu hướng thiết kế</a>
+                </li>
+                <li class="footer__item--link">
+                  <a href="">Xu hướng du lịch</a>
+                </li>
+                <li class="footer__item--link">
+                  <a href="">Kinh doanh du lịch</a>
+                </li>
+                <li class="footer__item--link">
+                  <a href="">Quản lý doanh thu</a>
+                </li>
+                <li class="footer__item--link">
+                  <a href="">Kinh doanh du lịch</a>
+                </li>
+                <li class="footer__item--link">
+                  <a href="">Tin tức- sự kiện</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__item support-us">
+              <div class="footer__item--heading">
+                Thanh toán an toàn với chúng tôi
+              </div>
+              <p class="footer__item--desc">
+                Khoản thanh toán được mã hóa và truyền an toàn với giao thức
+                SSL.
+              </p>
+              <img src="./assets/img/bank/creditcard-logo.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="footer__button">
+          <div class="footer__button--wrap">
+            <div class="footer__license">
+              © 2022 Wonder Place. All rights reserved.
+            </div>
+            <div class="footer__social">
+              <span>Follow us on</span>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/global.js"></script>
+  </body>
+</html>

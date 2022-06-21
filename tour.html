@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hot tour</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/global.css" />
+  <link rel="stylesheet" href="./assets/css/tour.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+
+<body>
+  <div class="loading">
+    <div class="loading__main"></div>
+  </div>
+  <div id="app">
+    <header id="header" class="distance-bottom">
+      <div class="wrapper">
+        <!-- navigation -->
+        <nav class="nav">
+          <a href="#" class="nav__logo">
+            <img src="./assets/img/logo/22.png" alt="" class="img-full" />
+          </a>
+          <!-- list nav -->
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Trang chủ</a>
+            </li>
+            <li class="nav__item">
+              <a href="./tour.html" class="nav__link">Hot Tour</a>
+            </li>
+            <li class="nav__item">
+              <a href="./about.html" class="nav__link">Về chúng tôi</a>
+            </li>
+            <li class="nav__item">
+              <a href="./blog.html" class="nav__link">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a href="./contact.html" class="nav__link">Liên lạc</a>
+            </li>
+          </ul>
+          <div class="nav__btn--menu"></div>
+        </nav>
+      </div>
+    </header>
+    <div id="body" class="tour">
+      <section class="tour__body">
+        <h2 class="tour__info--heading">Hot Tour</h2>
+        <div class="tour__search">
+          <input type="text" placeholder="Search">
+          <button class="tour__search--btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="layout-container">
+          <div class="tour__list--result">
+            <div class="tour__search--empty hide">
+              <div class="search--empty-img">
+                <img src="./assets/img/tour/notfound.png" alt="" class="img-full">
+              </div>
+              <h3 class="search--empty--heading">
+                Không tìm thấy kết quả nào
+              </h3>
+            </div>
+            <div class="tour__list--item ">
+              <div class="tour__item--wrap">
+                <img src="./assets/img/hoi an/hoian1.jpg" class="img-full" alt="" />
+                <span class="tour__item--sale">Sales</span>
+                <div class="tour__item--name">Hội An</div>
+                <div class="tour__item--add">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <div class="tour__item--rate">
+                <span class="rate eyes">
+                  <i class="fa-solid fa-eye"></i>
+                  210
+                </span>
+                <span class="rate heart">
+                  <i class="fa-solid fa-heart"></i>
+                  321
+                </span>
+                <span class="rate comment">
+                  <i class="fa-solid fa-comment"></i>
+                  42
+                </span>
+              </div>
+              <div class="tour__item--content">
+                <span class="item--price">3,990,000đ</span>
+                <span class="item--day">7 ngày</span>
+                <p class="item--desc">
+                  Du lịch Hội An, khám phá phố cổ Hội An đẹp như một bức tranh mộc mạc, giản dị và nên thơ do người họa
+                  sĩ điêu luyện kỳ công tô vẽ.
+                </p>
+              </div>
+              <div class="tour__item--button">
+                <button class="book">Đặt ngay</button>
+                <button class="add">Thêm </button>
+              </div>
+            </div>
+            <div class="tour__list--item">
+              <div class="tour__item--wrap">
+                <img src="./assets/img/ha noi/hanoi4.jpg" class="img-full" alt="" />
+                <span class="tour__item--sale">Sales</span>
+                <div class="tour__item--name">Hà Nội</div>
+                <div class="tour__item--add">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <div class="tour__item--rate">
+                <span class="rate eyes">
+                  <i class="fa-solid fa-eye"></i>
+                  199
+                </span>
+                <span class="rate heart">
+                  <i class="fa-solid fa-heart"></i>
+                  255
+                </span>
+                <span class="rate comment">
+                  <i class="fa-solid fa-comment"></i>
+                  50
+                </span>
+              </div>
+              <div class="tour__item--content">
+                <span class="item--price">6,900,000 đ</span>
+                <span class="item--day">6 ngày</span>
+                <p class="item--desc">
+                  Du lịch Thủ đô Hà Nội không chỉ có lịch sử “ngàn năm văn hiến”, 36 phố phường, những danh thắng lịch
+                  sử,… mà còn hấp dẫn du khách với những hoạt động vui chơi.
+                </p>
+              </div>
+              <div class="tour__item--button">
+                <button class="book">Đặt ngay</button>
+                <button class="add">Thêm </button>
+              </div>
+            </div>
+            <div class="tour__list--item">
+              <div class="tour__item--wrap">
+                <img src="./assets/img/ha long/halong5.jpg" class="img-full" alt="" />
+                <span class="tour__item--sale">Sales</span>
+                <div class="tour__item--name">Hạ Long</div>
+                <div class="tour__item--add">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <div class="tour__item--rate">
+                <span class="rate eyes">
+                  <i class="fa-solid fa-eye"></i>
+                  110
+                </span>
+                <span class="rate heart">
+                  <i class="fa-solid fa-heart"></i>
+                  175
+                </span>
+                <span class="rate comment">
+                  <i class="fa-solid fa-comment"></i>
+                  37
+                </span>
+              </div>
+              <div class="tour__item--content">
+                <span class="item--price">5,950,000 đ</span>
+                <span class="item--day">10 ngày</span>
+                <p class="item--desc">
+                  Vịnh Hạ Long được ví như một bức tranh thủy mặc tuyệt mỹ tạo hóa đã ưu ái ban tặng cho vùng đất Quảng
+                  Ninh,được UNESCO công nhận là di sản thiên nhiên của thế giới.
+                </p>
+              </div>
+              <div class="tour__item--button">
+                <button class="book">Đặt ngay</button>
+                <button class="add">Thêm </button>
+              </div>
+            </div>
+            <div class="tour__list--item">
+              <div class="tour__item--wrap">
+                <img src="./assets/img/hue/hue2.jpg" class="img-full" alt="" />
+                <span class="tour__item--sale">Sales</span>
+                <div class="tour__item--name">Huế</div>
+                <div class="tour__item--add">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <div class="tour__item--rate">
+                <span class="rate eyes">
+                  <i class="fa-solid fa-eye"></i>
+                  99
+                </span>
+                <span class="rate heart">
+                  <i class="fa-solid fa-heart"></i>
+                  322
+                </span>
+                <span class="rate comment">
+                  <i class="fa-solid fa-comment"></i>
+                  60
+                </span>
+              </div>
+              <div class="tour__item--content">
+                <span class="item--price">2,990,000 đ</span>
+                <span class="item--day">3 ngày</span>
+                <p class="item--desc">
+                  Du lịch Huế, chiêm ngưỡng các di tích xưa, đền đài, tận hưởng không gian thơ mộng.
+                  Trải nghiệm ngồi thuyền rồng trên sông Hương, thưởng thức ca hò Huế, thả hoa đăng cầu phúc lộc.
+                </p>
+              </div>
+              <div class="tour__item--button">
+                <button class="book">Đặt ngay</button>
+                <button class="add">Thêm </button>
+              </div>
+            </div>
+            <div class="tour__list--item">
+              <div class="tour__item--wrap">
+                <img src="./assets/img/da lat/dalat6.jpg" class="img-full" alt="" />
+                <span class="tour__item--sale">Sales</span>
+                <div class="tour__item--name">Đà Lạt</div>
+                <div class="tour__item--add">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <div class="tour__item--rate">
+                <span class="rate eyes">
+                  <i class="fa-solid fa-eye"></i>
+                  233
+                </span>
+                <span class="rate heart">
+                  <i class="fa-solid fa-heart"></i>
+                  196
+                </span>
+                <span class="rate comment">
+                  <i class="fa-solid fa-comment"></i>
+                  78
+                </span>
+              </div>
+              <div class="tour__item--content">
+                <span class="item--price">8,660,000 đ</span>
+                <span class="item--day">7 ngày</span>
+                <p class="item--desc">
+                  Du lịch Đà Lạt – Thành phố ngàn hoa Đà Lạt có không khí se se lạnh luôn là điểm đến hấp dẫn nhiều du
+                  khách. Với các điểm đến nổi tiếng như: Hồ Xuân Hương, Thiền Viện Trúc Lâm, Chùa Tàu,...
+                </p>
+              </div>
+              <div class="tour__item--button">
+                <button class="book">Đặt ngay</button>
+                <button class="add">Thêm </button>
+              </div>
+            </div>
+            <div class="tour__list--item">
+              <div class="tour__item--wrap">
+                <img src="./assets/img/da nang/danang3.jpg" class="img-full" alt="" />
+                <span class="tour__item--sale">Sales</span>
+                <div class="tour__item--name">Đà Nẵng</div>
+                <div class="tour__item--add">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <div class="tour__item--rate">
+                <span class="rate eyes">
+                  <i class="fa-solid fa-eye"></i>
+                  155
+                </span>
+                <span class="rate heart">
+                  <i class="fa-solid fa-heart"></i>
+                  217
+                </span>
+                <span class="rate comment">
+                  <i class="fa-solid fa-comment"></i>
+                  39
+                </span>
+              </div>
+              <div class="tour__item--content">
+                <span class="item--price">2,990,000 đ</span>
+                <span class="item--day">5 ngày</span>
+                <p class="item--desc">
+                  Du lịch Đà Nẵng - Thành phố du lịch Đà Nẵng là một trong những điểm tham quan nghỉ dưỡng lý tưởng,sở hữu nhiều danh thắng tuyệt đẹp say lòng
+                </p>
+              </div>
+              <div class="tour__item--button">
+                <button class="book">Đặt ngay</button>
+                <button class="add">Thêm </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="content__pagination">
+        <a href="" class="pagination__icon-back">
+          <i class="fa-solid fa-angle-left"></i>
+        </a href="">
+        <!-- swap pagination numbger selection -->
+        <a href="" class="pagination__number pagination__number--selection">
+          1
+        </a href="">
+        <a href="" class="pagination__number">2</a href="">
+        <a href="" class="pagination__number">3</a href="">
+        <a href="" class="pagination__number">4</a href="">
+        <a href="" class="pagination__number">5</a href="">
+        <p class="pagination__continue">...</p>
+        <a href="" class="pagination__icon-back">
+          <i class="fa-solid fa-angle-right"></i>
+        </a href="">
+      </div>
+      <section class="contact__subscribe">
+        <div class="layout-container contact__subscribe--wrap">
+          <div class="contact__subscribe--content">
+            <h2 class="contact__subscribe--heading">
+              <span>Đăng ký</span> để nhận được ưu đãi mới nhất
+            </h2>
+            <div class="contact__subscribe--desc">
+              Tận hưởng những trải nghiệm tốt nhất của chúng tôi bằng cách đăng ký qua email để nhận những thông báo mới
+              nhất
+            </div>
+          </div>
+          <input type="text" class="contact__subscribe--send" placeholder="Nhập địa chỉ email của bạn" />
+        </div>
+      </section>
+    </div>
+    <footer id="footer">
+      <div class="layout-container">
+        <div class="footer__top">
+          <div class="footer__item contact">
+            <h2 class="contact__heading">Call Us</h2>
+            <div class="contact__phone">
+              <i class="fa-solid fa-phone"></i>
+              <span>+84 035 0439 493</span>
+            </div>
+            <h2 class="contact__heading">Email</h2>
+            <div class="contact__phone">
+              <span>Ask@travelviet.com</span>
+            </div>
+          </div>
+          <div class="footer__item about-us">
+            <div class="footer__item--heading">VietTravel</div>
+            <ul class="footer__item--list">
+              <li class="footer__item--link">
+                <a href="">Về chúng tôi</a>
+              </li>
+              <li class="footer__item--link">
+                <a href="">Khách hàng tiêu biểu</a>
+              </li>
+              <li class="footer__item--link">
+                <a href="">Quy trình triển khai</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item support-us">
+            <div class="footer__item--heading">Kiến thức lĩnh vực</div>
+            <ul class="footer__item--list">
+              <li class="footer__item--link">
+                <a href="">Xu hướng thiết kế</a>
+              </li>
+              <li class="footer__item--link">
+                <a href="">Xu hướng du lịch</a>
+              </li>
+              <li class="footer__item--link">
+                <a href="">Kinh doanh du lịch</a>
+              </li>
+              <li class="footer__item--link">
+                <a href="">Quản lý doanh thu</a>
+              </li>
+              <li class="footer__item--link">
+                <a href="">Kinh doanh du lịch</a>
+              </li>
+              <li class="footer__item--link">
+                <a href="">Tin tức- sự kiện</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item support-us">
+            <div class="footer__item--heading">
+              Thanh toán an toàn với chúng tôi
+            </div>
+            <p class="footer__item--desc">
+              Khoản thanh toán được mã hóa và truyền an toàn với giao thức
+              SSL.
+            </p>
+            <img class="" src="./assets/img/bank/creditcard-logo.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="footer__button">
+        <div class="footer__button--wrap">
+          <div class="footer__license">
+            © 2022 Wonder Place. All rights reserved.
+          </div>
+          <div class="footer__social">
+            <span>Follow us on</span>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+     <script src="./assets/js/page.js"></script>
+
+  <script>
+   
+
+    const listNameTours = document.querySelectorAll(".tour__item--name")
+    const buttonSearch = document.querySelector(".tour__search--btn")
+    const inputSearch = document.querySelector(".tour__search  input")
+    const notFound = document.querySelector(".tour__search--empty")
+    function handlerSearch(value){
+      let isResultSearch = false;
+      inputSearch.value = "";
+       listNameTours.forEach(nameTour=> {
+         if(nameTour.innerText.toLowerCase().includes(value)) {
+           isResultSearch = true;
+           nameTour.parentElement.parentElement.classList.remove("hide")
+         } else {
+            nameTour.parentElement.parentElement.classList.add("hide")
+         }
+    })
+    if(!isResultSearch) {
+      notFound.classList.remove("hide")
+    } else {
+      notFound.classList.add("hide")
+    }
+    }
+    buttonSearch.addEventListener("click",()=> {
+      const value = inputSearch.value.trim();
+      handlerSearch(value)
+    })
+  </script>
+</body>
+
+</html>
