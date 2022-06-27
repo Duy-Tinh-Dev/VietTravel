@@ -18,10 +18,7 @@ loadingWeb
     });
   })
   .then(() => {
-    const nav = document.querySelector(".nav");
     const body = document.querySelector("body");
-    const videos = document.querySelector(".header__videos");
-    const video = document.querySelector(".header__videos--item");
     const btnSliders = document.querySelectorAll(".header__slider--btn");
     const counterTravel = document.querySelector(".visited__quantity--travel");
     const counterMessage = document.querySelector(
@@ -37,44 +34,40 @@ loadingWeb
       } else {
         btnScrollTop.classList.add("hide");
       }
-      // if (prevScroll >= 10) {
-      //   nav.classList.add("change-bg");
-
-      //   nav.style.boxShadow = "0 2px 4px 0 rgba(0, 0, 0, 0.2)";
-      // } else {
-      //   nav.classList.remove("change-bg");
-      // }
     };
     window.addEventListener("scroll", () => {
       handleScroll();
       handlerLoopEl();
     });
     // handler slider
+    let currentIndexSlider = 1;
+    function showSlider(n) {
+      let slides = document.querySelectorAll(".header__slider--item");
+      if (n < 0) {
+        currentIndexSlider = slides.length;
+      } else if (n > slides.length) {
+        currentIndexSlider = 1;
+      } else {
+        currentIndexSlider = n;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[currentIndexSlider].style.display = "block";
+    }
+    showSlider(currentIndexSlider - 1);
+    // handler btn slider
     function handlerSlider(manual) {
+      showSlider(manual);
       btnSliders.forEach((btn) => {
         btn.classList.remove("active");
       });
       btnSliders[manual].classList.add("active");
-      videos.innerHTML = `<video
-          autoplay
-          loop
-          muted
-          src="./assets/video/${manual + 1}.mp4"
-          class="header__video--item"
-        ></video>`;
-    }
-    if (!video) {
-      videos.innerHTML = `<video
-          autoplay
-          loop
-          muted
-          src="./assets/video/1.mp4"
-          class="header__video--item"
-        ></video>`;
     }
     btnSliders.forEach((el, index) => {
       el.addEventListener("click", () => handlerSlider(index));
     });
+
     // handler animation scroll
     const screenWindow =
       window.innerHeight || document.documentElement.clientHeight;

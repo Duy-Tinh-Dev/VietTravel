@@ -7,6 +7,9 @@
   }
 }
 @media screen and (max-width: 780px) {
+  .tour__search {
+    width: 100%;
+  }
   .nav__btn--menu {
     display: block;
     background-color: unset;

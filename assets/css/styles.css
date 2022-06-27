@@ -37,8 +37,8 @@
   background-color: var(--color-arrow);
   bottom: 44px;
 }
-
-.header__videos {
+/* 
+.header__wrap-btn {
   transition: all 2s ease;
 }
 
@@ -54,19 +54,34 @@
 
 @keyframes showVideo {
   0% {
-    clip-path: circle(0% at 0 0);
-  }
-
-  50% {
-    clip-path: circle(84.5% at 0 0);
+    transform: translateX(-100%);
   }
 
   100% {
-    clip-path: circle(141.7% at 0 0);
+    transform: translateX(0%);
   }
+} */
+/* .header__slider--item {
+  display: none;
+} */
+/* .header__slider--item.active {
+  display: block;
+} */
+.header__slider-img {
+  height: 100vh;
+  animation-name: fade;
+  animation-duration: 2s;
 }
 
-.header__slider {
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.header__wrap-btn {
   z-index: 10;
   position: absolute;
   display: flex;
